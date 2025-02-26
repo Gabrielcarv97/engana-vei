@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Hernandes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav>
+            <div class="logo">
+                Devido à grande procura, garantimos apresentação apenas até: 
+                <span id="future-date"></span>
+                <script>
+                    function getNextMonday() {
+                        const today = new Date();
+                        const nextDate = new Date(today);
+                        
+                        const options = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
+                        return nextDate.toLocaleDateString('pt-BR', options);
+                    }
+                    document.getElementById('future-date').textContent = getNextMonday();
+                </script>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+            <div class="video-container">
+            <div style="pointer-events: none;"></div>
+                <script type="text/javascript" id="scr_67be5cf926f95807b93b8686">
+                    var s=document.createElement("script");
+                    s.src="https://scripts.converteai.net/bf333ee3-159f-46c5-83ac-bddb1493938f/ab-test/67be5cf926f95807b93b8686/player.js",
+                    s.async=!0,document.head.appendChild(s);
+                </script>
+            </div>
+            </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <img src="../assets/certificado-ssl.png" alt="descrição da imagem" class="footer-image" width="100" height="auto">
+            <img src="../assets/site-blindado-logo-6.png" alt="descrição da imagem" class="footer-image">
+        </div>
+        <div class="footer-disclaimer">
+            <p>Copyright 2025 / Dr. Hernandes - Todos los derechos reservados.</p>
+            <br>
+            <p>Este site não está afiliado ao Facebook nem a qualquer entidade da META.<br>
+             Facebook Instagram não é responsabilidade deles, mas sim do nosso site.<br>
+            Fazemos todo o possível para indicar e mostrar as provas do <br>
+            produto que utilizamos e os resultados reais.</p>
+        </div>
+    </footer>
+</body>
+</html>
